@@ -1,5 +1,11 @@
 I tested on mac pro2 with opencl
 
+git remote add upstream https://github.com/ckolivas/cgminer.git
+git fetch upstream --tags
+git push origin --tags
+
 checkout v3.7.2
 
 ./autogen.sh --enable-opencl
+
+util.c   : clock_nanosleep -> nanosleep 로 변경
